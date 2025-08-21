@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salse</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="Scripts.js" defer></script>
+</head>
+<body>
+    <Header>
+        <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Sales.html">Sales</a></li>
+        <li><a href="Report.html">Reports</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+   <section class="form-section">
+  
+  <div id="sales" class="tab-content">
+    <h2>Sales Entry Form</h2>
+    <form onsubmit="validateInput();return false">
+    <input type="text" id="customerName" placeholder="Customer Name"><br>
+      <input type="text" id="address" placeholder="Customer Address"><br>
+      <input type="text"  placeholder="Sales ID"><br>
+      <input type="text" id="productName" placeholder="Product Name"><br>
+      <input type="number" id="quantity" placeholder="Quantity"><br>
+      <input type="number" id="price" placeholder="Price"><br>
+      <button onclick="validateInput()">Calculate</button>
+      <div id="result"></div>
+        <label>Payment Method:
+            <input type="radio" name="Payment" value="Cash">Cash
+            <input type="radio" name="Payment" value="Card">Card
+        </label>   
+        <button type="submit">Submit</button>
+        
+      <button type="reset">Clear</button>
+  </main>
+<footer>
+    <p>&copy; 2025 Malatji Supermarket. All rights reserved.</p>
+    <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a>
+  </footer>
+  
+</body>
+</html>
