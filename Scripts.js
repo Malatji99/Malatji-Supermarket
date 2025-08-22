@@ -8,6 +8,18 @@ function calculateTotal(quantity, price) {
     return 0;
   }
 }
+function validateInput(){
+  const name = document.getElementById("customerName").value;
+   const name = document.getElementById("address").value;
+   const name = document.getElementById("salesID").value;
+
+  if (!name|| !address|| !salesID){
+    alert("Please fill in all required fields.");
+    return false
+  }
+  alert("Sales enrty submitted successfully!");
+  return true;
+}
 
 // ✅ Validate input fields
 function validateInput() {
@@ -90,4 +102,5 @@ document.addEventListener("DOMContentLoaded", function () {
     let price = parseFloat(document.getElementById("price").value);
     calculateTotal(quantity, price);
   });
+
 });
